@@ -1,0 +1,155 @@
+#page-home main {
+    margin: 0 15vw;
+
+    text-align: justify;
+
+    margin-bottom: 100px;
+}
+
+.slogan {
+
+    height: 400px;
+    background: var(--color-background-main-slogan);
+
+    border-radius: 30px;
+
+    display: inline-block;
+
+    width: 100%;
+
+    position: relative;  
+}
+
+.slogan-text {
+    display: inline-block;   
+    
+    max-width: 316px;
+
+    margin: 120px 0 0 5%;    
+}
+
+
+.slogan-text h1 {
+    font-size: 32px;
+    color: var(--color-text-headers);
+}
+
+.slogan-text p {
+    font-size: 18px; 
+    opacity: 0.7;
+    color: var(--color-text-slogan);
+    line-height: 28px;
+
+    margin-top: 10px;
+}
+
+.slogan-image {
+    display: inline-block;
+
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.text-cards {
+    margin-top: 50px;
+    font-size: 24px;
+    color: var(--color-text-headers);
+}
+
+.cards-space {
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.card-image img{
+    width: 100%;   
+    border-radius: 15px;
+}
+
+.card-text {
+    margin-top: 20px;
+}
+
+.card-text h2 {
+    font-size: 18px;
+    color: var(--color-text-headers);
+    font-weight: normal;
+}
+
+.card-text p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--color-text-recipes);
+}
+
+
+
+/* ---------- MODAL OVERLAY ----------- */
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color: white;
+    max-width: 660px;    
+
+    margin: 20vh auto;
+    border-radius: 16px;
+
+}
+.modal .modal-content {
+    margin-bottom: 30px;
+}
+
+.modal .modal-content img{
+  
+    max-width: 600px;
+    margin: 30px;
+    border-radius: 16px;
+}
+
+.modal .modal-content h1{
+    color: #111111;
+    text-align: center;
+    
+}
+
+.modal .modal-content p{
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+
+    
+
+}
+
+.modal .close-modal {
+    text-align: center;
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
+    padding: 10px;
+}
+

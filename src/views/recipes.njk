@@ -1,0 +1,60 @@
+{% extends "layout.njk" %}
+
+{% set pageId = "page-recipes" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/header.css">   
+    <link rel="stylesheet" href="/styles/recipes.css"> 
+    <link rel="stylesheet" href="/styles/footer.css">
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "partials/page-header.njk" %} 
+
+    <!-- CONTENT -->
+    
+    <div class="cards-recipes">
+
+        {% for item in items %}
+         <!-- Card n -->
+            <div class="card" id="1{{items.indexOf(item)}}">
+                <div class="card-image">
+                    <img src="{{item.image}}" alt="">
+                </div>
+                <div class="card-text">
+                    <h2>{{item.title}}</h2>
+                    <p>por {{item.author}}</p>
+                </div>            
+            </div>  
+        {% endfor %}
+
+        {% for item in items %}
+         <!-- Card n -->
+            <div class="card" id="2{{items.indexOf(item)}}">
+                <div class="card-image">
+                    <img src="{{item.image}}" alt="">
+                </div>
+                <div class="card-text">
+                    <h2>{{item.title}}</h2>
+                    <p>por {{item.author}}</p>
+                </div>            
+            </div>  
+        {% endfor %}
+        
+    </div>
+
+    <!-- FOOTER -->
+    {% include "partials/page-footer.njk" %}
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+    <script src="/scripts/recipes.js"></script>
+{% endblock scripts %} 

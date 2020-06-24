@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    {% block title %}
+        <title>Foodfy by FabianoLC</title>
+    {% endblock title %}
+
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- STYLES PAGE -->
+    {% block styles %}
+    {% endblock styles %}    
+</head>
+<body>
+
+   
+    <!-- PAGE ID -->
+    <div id="{{ pageId }}">
+
+        <!-- INCLUDE DO HEADER -->
+
+        <!-- PAGE CONTENT -->
+        {% block content %}
+        {% endblock content %}
+
+        <!-- INCLUDE DO FOOTER -->
+
+    </div>
+
+    <!-- MODAL -->
+    {% block modal %}
+    {% endblock modal %} 
+
+    <!-- SCRIPTS -->
+    {% block scripts %}
+    {% endblock scripts %}
+
+</body>
+</html>

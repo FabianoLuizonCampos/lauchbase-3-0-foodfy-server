@@ -1,0 +1,25 @@
+.menu {    
+    display: inline-block;
+    padding: 30px;
+
+    align-items:  center;
+
+    margin: 0 15vw;
+}
+
+.menu a img {
+    display: inline-block;
+}
+
+.menu .links {
+    display: inline-block;
+    
+    padding: 16px;
+    margin-left: 120px;    
+}
+
+.menu .links a {
+    margin-left: 32px;
+
+    color: var(--color-text-headers);
+}

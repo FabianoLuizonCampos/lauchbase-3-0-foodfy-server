@@ -1,0 +1,139 @@
+#page-recipe-detail {
+    margin-bottom: 100px;
+}
+
+#page-recipe-detail .card-recipe {
+    margin: 0 15vw;    
+    text-align: center;
+}
+
+
+#page-recipe-detail .card-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#page-recipe-detail .card-title { 
+    text-align: center;
+    margin-top: 50px;
+}
+
+#page-recipe-detail .card-title h1 { 
+    font-size: 36px;
+    color: #111111;
+}
+
+#page-recipe-detail .card-title p { 
+    font-size: 20px;
+    color: #777777;
+}
+
+#page-recipe-detail .card-ingredients {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#page-recipe-detail .card-ingredients .card-remove {
+    display: inline-block;
+}
+
+#page-recipe-detail .card-ingredients .card-remove h2 {
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+
+    display: inline-block;
+}
+
+#page-recipe-detail .card-ingredients .card-remove p {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-size: 12px;
+    color: #999999;
+
+    cursor: pointer;
+}
+
+#page-recipe-detail .card-ingredients #card-text-ingredients li {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-left: 20px;
+}
+
+#page-recipe-detail .card-preparation {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#page-recipe-detail .card-preparation .card-remove {
+    display: inline-block;    
+}
+
+#page-recipe-detail .card-preparation .card-remove h2 {
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+
+    display: inline-block;
+}
+
+#page-recipe-detail .card-preparation .card-remove p {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-size: 12px;
+    color: #999999;
+
+    cursor: pointer;
+}
+
+#page-recipe-detail .card-preparation p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+#page-recipe-detail .card-information {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#page-recipe-detail .card-information .card-remove {
+    display: inline-block;
+}
+
+#page-recipe-detail .card-information .card-remove h2 {
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+
+    display: inline-block;
+}
+
+#page-recipe-detail .card-information .card-remove p {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-size: 12px;
+    color: #999999;
+
+    cursor: pointer;
+}
+
+#page-recipe-detail .card-information p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+
+    text-align: justify;
+}
+
+
+/* ----------- HIDE ------------*/
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}

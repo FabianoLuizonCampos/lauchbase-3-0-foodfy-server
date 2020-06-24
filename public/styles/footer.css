@@ -1,0 +1,17 @@
+footer {
+    margin-top: 20px;
+    
+    height: 70px;
+    width: 100%;
+    background-color: var(--color-background-footer);
+    color: var(--color-text-message);
+
+    text-align: center;    
+
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    padding-top: 20px;
+}

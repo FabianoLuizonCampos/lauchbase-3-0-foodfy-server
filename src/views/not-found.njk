@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+{% set pageId = "page-not-found" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/header.css">   
+    <link rel="stylesheet" href="/styles/not-found.css"> 
+    <link rel="stylesheet" href="/styles/footer.css">
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "partials/page-header.njk" %} 
+
+    <!-- CONTENT -->
+    
+    <main>
+        <div class="slogan">
+            <div class="slogan-text">
+                <h1>ERRO 404</h1>
+                <p>PÁGINA NÃO ENCONTRADA!!!</p>
+            </div>
+            <div class="slogan-image">
+                <img src="/assets/chef.png" alt="Logo">            
+            </div>       
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    {% include "partials/page-footer.njk" %}
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+{% endblock scripts %} 

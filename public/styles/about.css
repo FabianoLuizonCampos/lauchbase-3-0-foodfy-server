@@ -1,0 +1,50 @@
+#page-about {
+    margin-bottom: 100px;
+}
+
+.about {
+
+    margin: 0 15vw;
+
+    text-align: justify;
+
+}
+
+.about-foodfy h1 {
+    
+    font-size: 24px;
+    color: var(--color-text-headers);
+}
+
+.about-foodfy p {
+    margin-top: 24px;
+    font-size: 18px;
+    color: var(--color-text-about);
+    line-height: 28px;
+}
+
+.about-start h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--color-text-headers);
+}
+
+.about-start p {
+    margin-top: 24px;
+    font-size: 18px;
+    color: var(--color-text-about);
+    line-height: 28px;
+}
+
+.about-recipes h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--color-text-headers);
+}
+
+.about-recipes p {
+    margin-top: 24px;
+    font-size: 18px;
+    color: var(--color-text-about);
+    line-height: 28px;
+}

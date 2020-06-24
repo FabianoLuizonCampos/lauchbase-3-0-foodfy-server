@@ -1,0 +1,89 @@
+{% extends "layout.njk" %}
+
+{% set pageId = "page-home" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/header.css">   
+    <link rel="stylesheet" href="/styles/index.css"> 
+    <link rel="stylesheet" href="/styles/footer.css">
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "partials/page-header.njk" %} 
+
+    <!-- CONTENT -->
+    
+    <main>
+        <div class="slogan">
+            <div class="slogan-text">
+                <h1>As melhores receitas</h1>
+                <p>Aprenda a construir os melhores pratos com receitas criadas por porfissionais do mundo inteiro</p>
+            </div>
+            <div class="slogan-image">
+                <img src="/assets/chef.png" alt="Logo">            
+            </div>       
+        </div>
+
+        <div class="text-cards">
+            <h1>Mais acessadas</h1>
+        </div>        
+
+        <div class="cards-space">
+              <!-- Card n -->
+            {% for item in items %}
+            
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{item.image}}" alt="{{item.title}}">
+                    </div>
+                    <div class="card-text">
+                        <h2>{{item.title}}</h2>
+                        <p>por {{item.author}}</p>
+                    </div>            
+                </div>
+
+            {% endfor %}  
+        </div> 
+
+    </main>
+
+
+    <!-- FOOTER -->
+    {% include "partials/page-footer.njk" %}
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+    <div class="modal-overlay">
+
+        <div class="modal">
+            <!--
+            <a class="maximize-modal">
+                <i class="material-icons">maximize</i>  
+            </a> 
+            -->       
+            
+            <div class="modal-content">
+                <img src="" alt="">
+                <h1></h1>
+                <p></p>
+            </div>
+
+            <a class="close-modal">                    
+                <p>Fechar</p>
+            </a> 
+        </div>   
+
+    </div>
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
+{% endblock scripts %} 
+
+
+

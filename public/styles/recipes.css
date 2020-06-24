@@ -1,0 +1,38 @@
+#page-recipes {
+    margin-bottom: 100px;    
+}
+
+.cards-recipes {
+    padding: 30px;
+
+    align-content: center;
+
+    margin: 0 15vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.card-image img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-text h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--color-text-headers);
+    font-weight: normal;
+}
+
+.card-text p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--color-text-recipes);
+}

@@ -1,0 +1,92 @@
+{% extends "layout.njk" %}
+
+{% set pageId = "page-recipe-detail" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/header.css">   
+    <link rel="stylesheet" href="/styles/recipe-detail.css"> 
+    <link rel="stylesheet" href="/styles/footer.css">
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "partials/page-header.njk" %} 
+
+    <!-- CONTENT -->
+    <div class="card-recipe">      
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="{{item.image}}" alt="">
+                </div>
+
+                <div class="card-title">
+                    <h1>{{item.title}}</h2>
+                    <p>por {{item.author}}</p>
+                </div>
+
+                <!-- INGREDIENTS -->
+                <div class="card-ingredients"> 
+                    
+                    <div class="card-remove">
+                        <h2>Ingredientes</h2> 
+                        <p class="card-hide" id="0">Esconder</p>
+                    </div> 
+                    
+                    <div class="card-text" id="card-text-ingredients">
+                        <ul>
+                        {% for ingredient in item.ingredients %}
+                            <li>{{ingredient}}</li>
+                        {% endfor %} 
+                        </ul>   
+                    </div>             
+                    
+                </div>
+
+                <!-- PREPARATION -->
+                <div class="card-preparation">
+
+                    <div class="card-remove">
+                        <h2>Modo de preparo</h2> 
+                        <p class="card-hide" id="1">Esconder</p>
+                    </div>                                    
+
+                    <div class="card-text" id="card-text-preparation">
+                        <p>{{item.preparation}}</p>
+                    </div>
+             
+                </div>
+
+                <!-- INFORMATION -->
+                <div class="card-information"> 
+
+                    <div class="card-remove">
+                        <h2>Informações adicionais</h2>                   
+                        <p class="card-hide" id="2">Esconder</p>
+                    </div>                 
+
+                    <div class="card-text" id="card-text-information">
+                        <p>{{item.information}}</p>
+                    </div>
+                
+                </div>
+
+            </div>  
+        
+    </div>
+    
+
+    <!-- FOOTER -->
+    {% include "partials/page-footer.njk" %}
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+    <script src="/scripts/recipe-detail.js"></script>
+{% endblock scripts %} 

@@ -1,0 +1,51 @@
+#page-not-found main {
+    margin: 0 15vw;
+
+    text-align: justify;
+
+    margin-bottom: 100px;    
+}
+
+.slogan {
+    height: 400px;
+    width: 100%;
+    
+    background: rgb(155, 155, 155);
+    border-radius: 30px;
+
+    display: inline-block;
+    position: relative;    
+}
+
+.slogan-text {
+    display: inline-block;   
+    
+    max-width: 316px;
+    margin: 120px 0 0 10%;  
+    
+    text-align: center;
+}
+
+.slogan-text h1 {
+    font-size: 50px;
+    color: var(--color-text-headers);
+}
+
+.slogan-text p {
+    font-size: 18px; 
+    opacity: 0.7;
+    color: var(--color-text-slogan);
+    line-height: 28px;
+
+    margin-top: 10px;
+}
+
+.slogan-image {
+    display: inline-block;
+
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+
+    filter: grayscale();
+}

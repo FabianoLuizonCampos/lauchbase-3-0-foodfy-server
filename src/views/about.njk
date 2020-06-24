@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+
+{% set pageId = "page-about" %}
+
+<!-- STYLES PAGE -->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/header.css">   
+    <link rel="stylesheet" href="/styles/about.css"> 
+    <link rel="stylesheet" href="/styles/footer.css">
+{% endblock styles %}     
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <!-- HEADER -->
+    {% include "partials/page-header.njk" %} 
+
+    <!-- CONTENT -->
+    
+    <div class="about">
+        <div class="about-foodfy">
+            <h1>Sobre o Foody</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit veniam dicta illo odio culpa dolorum ex expedita, sequi adipisci explicabo necessitatibus blanditiis itaque aspernatur ea, earum iste laboriosam voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas consectetur tempore distinctio deserunt quia dolore nemo laborum, harum repellendus ipsum velit assumenda? Quam placeat culpa facere exercitationem et, officia eos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit veniam dicta illo odio culpa dolorum ex expedita, sequi adipisci explicabo necessitatibus blanditiis itaque aspernatur ea, earum iste laboriosam voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum omnis eum, eos soluta quod harum quia odit voluptatum, debitis itaque. Sunt ducimus itaque aliquam, nisi iste similique ad recusandae.</p>
+        </div>   
+
+        <div class="about-start">
+            <h1>Como tudo começou...</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit veniam dicta illo odio culpa dolorum ex expedita, sequi adipisci explicabo necessitatibus blanditiis itaque aspernatur ea, earum iste laboriosam voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sapiente at voluptatem, consectetur earum provident enim dicta accusantium. Voluptatum quisquam dolor repudiandae minima eum inventore sed provident magni quia ipsa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit veniam dicta illo odio culpa dolorum ex expedita, sequi adipisci explicabo necessitatibus blanditiis itaque aspernatur ea, earum iste laboriosam voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto error ab consequuntur laudantium ad eveniet blanditiis nobis et, nemo reprehenderit quos dolor ex eum temporibus necessitatibus quibusdam animi. Iure, pariatur.</p>
+        </div>  
+
+        <div class="about-recipes">
+            <h1>Nossas Receitas</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit veniam dicta illo odio culpa dolorum ex expedita, sequi adipisci explicabo necessitatibus blanditiis itaque aspernatur ea, earum iste laboriosam voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsum maiores deleniti ipsa consequuntur qui. Maxime vel dolore, dolores, laboriosam ducimus porro autem nihil ea sapiente, odit ipsam in minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit veniam dicta illo odio culpa dolorum ex expedita, sequi adipisci explicabo necessitatibus blanditiis itaque aspernatur ea, earum iste laboriosam voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus illum eos corporis dolor, officiis aperiam, dicta animi hic quia, sunt atque nihil voluptas maxime omnis numquam ratione nostrum. Voluptates!</p>
+        </div> 
+    </div>
+
+    <!-- FOOTER -->
+    {% include "partials/page-footer.njk" %}
+{% endblock content %}
+   
+<!-- MODAL -->
+{% block modal %}
+{% endblock modal %} 
+
+<!-- SCRIPTS -->
+{% block scripts %}
+{% endblock scripts %} 
